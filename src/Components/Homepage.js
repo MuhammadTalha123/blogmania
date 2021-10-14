@@ -12,11 +12,11 @@ import "../styling/home.css";
 const Homepage = () => {
   const isSignedIn = useSelector(selectSignedIn);
 
-//   const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const login = (response) => {
     console.log(response);
-    // dispatch(setSignedIn(true));
-    // dispatch(setUserData(response.profileObj));
+    dispatch(setSignedIn(true));
+    dispatch(setUserData(response.profileObj));
   };
 
   return (
